@@ -1,6 +1,7 @@
 /.idea
 /file_storage/__pycache__
 /file_handler_app/__pycache__
+/file_handler_app/migrations/__pycache__
 /file_storage/.env
 /task_env
 /__pycache__
