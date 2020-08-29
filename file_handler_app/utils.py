@@ -20,7 +20,7 @@ def generate_sha1(string):
 
 def upload_to_unique_folder(instance, filename):
     """
-    Uploads a file to an unique generated Path to keep the original filename
+    Uploads a file to an unique generated Path
     """
     hash = generate_sha1(filename)
     return f'{hash[:2]}/{hash}'
@@ -29,7 +29,7 @@ def upload_to_unique_folder(instance, filename):
 class MediaFileSystemStorage(FileSystemStorage):
     def get_available_name(self, name, max_length=None):
         if max_length and len(name) > max_length:
-            raise(Exception("name's length is greater than max_length"))
+            raise(Exception("Name's length is greater than max_length"))
         return name
 
     def _save(self, name, content):
