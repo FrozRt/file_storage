@@ -1,7 +1,7 @@
 # Set the default goal if no targets were specified on the command line
 .DEFAULT_GOAL = run
 
-PROJECT_NAME = online_store
+PROJECT_NAME = file_storage
 
 run:  ## Runs dev server
 		@python manage.py runserver
